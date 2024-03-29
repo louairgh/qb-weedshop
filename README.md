@@ -20,23 +20,8 @@ Weedshop Robbery for QBCore, Thermite, VarHack and auto-lock/unlock doors!
 - [cd_doorlock](https://forum.cfx.re/t/paid-codesign-door-lock/5005862)
 - [mz-skills](https://github.com/MrZainRP/mz-skills)
 
-## New Features
-
-- (Not really a "new" feature but) Optimised script, running at 0~0.1ms, only hitting 0.1ms when it locks or unlocks a door after a hack.
-- 2 New stores to rob // Grapeseed & Paleto
-- Config option for just the base GTA Vangelico's Jewellers or all 3.
-- Config option for base qb police alerts or ps-dispatch.
-- Doors now lock depending of the time of day, and store is "unthievable" during opening hours.
-- Police alerts for thermite have a higher chance when closer to business close or open.
-- Police alerts for smashing the cases can be disabled by hacking the main Vangelico's PC.
-- Cases will actually smash after you hit them, and reset after cooldown.
-- Thermite the stores fusebox to open the front door at night.
-- Hack into Vinewood Vangelico's PC to unlock all Vangelico's for 5 minutes (or whatever you set the cooldown to).
-
 ## Previews
-- [Cases](https://streamable.com/5xcg40)
-- [Dispatch Pt 1](https://streamable.com/3lspsx)
-- [Dispatch Pt 2](https://streamable.com/c9zs9z)
+- comming sooon
 
 ## Translations
 
@@ -44,19 +29,11 @@ Weedshop Robbery for QBCore, Thermite, VarHack and auto-lock/unlock doors!
 
 ## Store MLO's
 
-All store locations are for GigZ Jewelers' except for the base GTA one. It's a free map, link below:
+It's a free map Weed shop, link below:
 
-- [Legion Weed Clinic Interior](https://img.gta5-mods.com/q95/images/mlo-legion-weed-clinic/d5feac-weed.jpg)
-- **MAKE SURE TO INSTALL THE HEIST VERSION**
-- If you're using these MLO's, place interiorproxies.meta in the gigz_jewel_free_heist folder and edit it's fxmanifest to the following:
+- [Legion Weed Clinic Interior](https://www.gta5-mods.com/maps/mlo-legion-weed-clinic)
 
-```lua
-files {"interiorproxies.meta"}
-    
-data_file 'INTERIOR_PROXY_ORDER_FILE' 'interiorproxies.meta'
 ```
-
-
 
 - **It's important these cameras keep the same index as above and if you alter it, you should know what your doing.**
 
@@ -128,8 +105,8 @@ Config.Dispatch = 'ps' --[[ 'ps' for ps-dispatch, 'qb' for base qb-policejob ale
 Config.DoorLock = 'qb' --[[ Doorlock System ]]--
 
 Config.Stores = {
-  [1] = { -- City Vangelico's
-    label = 'Vangelico\'s Jewellers',
+  [1] = { -- City weedshop's
+    label = 'weedshop\'s Jewellers',
     coords = vector3(380.95, -826.64, 30.5),
     ['Doors'] = {
       main = 'weed_shop_door_1',
