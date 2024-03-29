@@ -1,6 +1,6 @@
 # qb-weedshop
 
-Weedshop Robbery for QBCore with 1 or 3 stores, Thermite, VarHack and auto-lock/unlock doors!
+Weedshop Robbery for QBCore, Thermite, VarHack and auto-lock/unlock doors!
 
 
 
