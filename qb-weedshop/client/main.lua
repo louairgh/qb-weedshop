@@ -173,7 +173,7 @@ local function alertsCD(alertType)
     TriggerServerEvent('cd_dispatch:AddNotification', {
       job_table = {'police', }, 
       coords = data.coords,
-      title = '10-65 - Jewelery Store Robbery',
+      title = '10-65 - Weedshopery Store Robbery',
       message = 'A '..data.sex..' robbing a Vangelico\'s at '..data.street, 
       flash = 0,
       unique_id = data.unique_id,
@@ -183,7 +183,7 @@ local function alertsCD(alertType)
         scale = 1.2, 
         colour = 3,
         flashes = true, 
-        text = '999 - Jewelery Store Robbery',
+        text = '999 - Weedshopery Store Robbery',
         time = 5,
         radius = 0
       }
@@ -221,7 +221,7 @@ local function alertsCD(alertType)
         scale = 1.2, 
         colour = 3,
         flashes = true, 
-        text = '999 - Jewelery Store Robbery',
+        text = '999 - Weedshopery Store Robbery',
         time = 5,
         radius = 5
       }
@@ -257,7 +257,7 @@ end
 -------------------------------- HANDLERS --------------------------------
 
 AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
-	QBCore.Functions.TriggerCallback('qb-weedshop:server:GetJewelleryState', function(result)
+	QBCore.Functions.TriggerCallback('qb-weedshop:server:GetWeedshopleryState', function(result)
 		Config.Vitrines = result.Locations
     Config.Stores = result.Hacks
 	end)
@@ -310,7 +310,7 @@ AddEventHandler('qb-weedshop:client:SmashCase', function(case)
         end
         if cops >= Config.RequiredCops then
           if isStoreHit(case, false) or isStoreHacked() then
-            local animDict = 'missheist_jewel'
+            local animDict = 'missheist_Weedshop'
             local animName = 'smash_case'
             local ped = PlayerPedId()
             local plyCoords = GetOffsetFromEntityInWorldCoords(ped, 0, 0.6, 0)
@@ -362,8 +362,8 @@ AddEventHandler('qb-weedshop:client:SmashCase', function(case)
                 TaskPlayAnim(ped, animDict, animName, 8.0, 8.0, -1, 31, 0.0, false, false, false)
                 Wait(500)
                 TriggerServerEvent('InteractSound_SV:PlayOnSource', 'breaking_vitrine_glass', 0.25)
-                loadPtfx('scr_jewelheist')
-                StartParticleFxLoopedAtCoord('scr_jewel_cab_smash', plyCoords.x, plyCoords.y, plyCoords.z, 0.0, 0.0, 0.0, 1.0, false, false, false, false)
+                loadPtfx('scr_Weedshopheist')
+                StartParticleFxLoopedAtCoord('scr_Weedshop_cab_smash', plyCoords.x, plyCoords.y, plyCoords.z, 0.0, 0.0, 0.0, 1.0, false, false, false, false)
                 Wait(5500)
               end
             end)
@@ -639,8 +639,8 @@ end)
 
 if not Config.OneStore then
   for k, v in pairs(Config.Vitrines) do
-    exports['qb-target']:AddBoxZone('jewelstore' .. k, v.coords, 1, 1, {
-      name = 'jewelstore' .. k,
+    exports['qb-target']:AddBoxZone('Weedshopstore' .. k, v.coords, 1, 1, {
+      name = 'Weedshopstore' .. k,
       heading = 40,
       minZ = v.coords.z - 1,
       maxZ = v.coords.z + 1,
@@ -668,8 +668,8 @@ if not Config.OneStore then
     })
   end
   for k, v in pairs(Config.Stores) do
-    exports['qb-target']:AddBoxZone('jewelthermite' .. k, v['Thermite'].coords, 0.4, 0.8, {
-      name = 'jewelthermite' .. k,
+    exports['qb-target']:AddBoxZone('Weedshopthermite' .. k, v['Thermite'].coords, 0.4, 0.8, {
+      name = 'Weedshopthermite' .. k,
       heading = v['Thermite'].h,
       debugPoly = false,
       minZ= v['Thermite'].minZ,
@@ -692,8 +692,8 @@ if not Config.OneStore then
   end
 else
   for i = 1, 20, 1 do
-    exports['qb-target']:AddBoxZone('jewelstore' .. i, Config.Vitrines[i].coords, 1, 1, {
-      name = 'jewelstore' .. i,
+    exports['qb-target']:AddBoxZone('Weedshopstore' .. i, Config.Vitrines[i].coords, 1, 1, {
+      name = 'Weedshopstore' .. i,
       heading = 40,
       minZ = Config.Vitrines[i].coords.z - 1,
       maxZ = Config.Vitrines[i].coords.z + 1,
@@ -724,8 +724,8 @@ else
       distance = 1.5
     })
   end
-  exports['qb-target']:AddBoxZone('jewelthermite' .. 1, Config.Stores[1]['Thermite'].coords, 0.4, 0.8, {
-    name = 'jewelthermite' .. 1,
+  exports['qb-target']:AddBoxZone('Weedshopthermite' .. 1, Config.Stores[1]['Thermite'].coords, 0.4, 0.8, {
+    name = 'Weedshopthermite' .. 1,
     heading = Config.Stores[1]['Thermite'].h,
     debugPoly = false,
     minZ= Config.Stores[1]['Thermite'].minZ, 
@@ -746,8 +746,8 @@ else
   })
 end
 
-exports['qb-target']:AddBoxZone('jewelpc' .. 1, Config.Stores[1]['Hack'].coords, 0.4, 0.6, {
-  name = 'jewelpc' .. 1,
+exports['qb-target']:AddBoxZone('Weedshoppc' .. 1, Config.Stores[1]['Hack'].coords, 0.4, 0.6, {
+  name = 'Weedshoppc' .. 1,
   heading = Config.Stores[1]['Hack'].h,
   debugPoly = false,
   minZ= Config.Stores[1]['Hack'].minZ,
