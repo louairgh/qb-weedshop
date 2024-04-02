@@ -74,10 +74,10 @@ RegisterServerEvent('qb-weedshop:server:ToggleDoorlocks', function(store, locked
     if Config.DoorLock == 'qb' then
       TriggerClientEvent('qb-doorlock:client:setState', -1, src, Config.Stores[store]['Doors'].main, locked, src, false, false)
     elseif Config.DoorLock == 'ox' then
-      local door = exports['ox_doorlock']:getDoorFromName('jewellery_stores ' .. Config.Stores[store]['Doors'].main) or exports['ox_doorlock']:getDoorFromName(Config.DoorGroup .. Config.Stores[store]['Doors'].main)
+      local door = exports['ox_doorlock']:getDoorFromName('Weedshoplery_stores ' .. Config.Stores[store]['Doors'].main) or exports['ox_doorlock']:getDoorFromName(Config.DoorGroup .. Config.Stores[store]['Doors'].main)
       TriggerEvent('ox_doorlock:setState', door.id, locked)
     elseif Config.DoorLock == 'cd' then
-      TriggerClientEvent('cd_doorlock:SetDoorState_name', -1, locked, Config.Stores[store]['Doors'].main, 'Jewellery Stores')
+      TriggerClientEvent('cd_doorlock:SetDoorState_name', -1, locked, Config.Stores[store]['Doors'].main, 'Weedshoplery Stores')
     end
   else
     for i = 1, #Config.Stores do
@@ -85,13 +85,13 @@ RegisterServerEvent('qb-weedshop:server:ToggleDoorlocks', function(store, locked
         TriggerClientEvent('qb-doorlock:client:setState', -1, src, Config.Stores[i]['Doors'].main, locked, src, false, false)
         TriggerClientEvent('qb-doorlock:client:setState', -1, src, Config.Stores[i]['Doors'].sec, locked, src, false, false)
       elseif Config.DoorLock == 'ox' then
-        local main = exports['ox_doorlock']:getDoorFromName('jewellery_stores ' .. Config.Stores[i]['Doors'].main) or exports['ox_doorlock']:getDoorFromName(Config.DoorGroup .. Config.Stores[i]['Doors'].main)
-        local sec = exports['ox_doorlock']:getDoorFromName('jewellery_stores ' .. Config.Stores[i]['Doors'].sec) or exports['ox_doorlock']:getDoorFromName(Config.DoorGroup .. Config.Stores[i]['Doors'].sec)
+        local main = exports['ox_doorlock']:getDoorFromName('Weedshoplery_stores ' .. Config.Stores[i]['Doors'].main) or exports['ox_doorlock']:getDoorFromName(Config.DoorGroup .. Config.Stores[i]['Doors'].main)
+        local sec = exports['ox_doorlock']:getDoorFromName('Weedshoplery_stores ' .. Config.Stores[i]['Doors'].sec) or exports['ox_doorlock']:getDoorFromName(Config.DoorGroup .. Config.Stores[i]['Doors'].sec)
         TriggerEvent('ox_doorlock:setState', main.id, locked)
         TriggerEvent('ox_doorlock:setState', sec.id, locked)
       elseif Config.DoorLock == 'cd' then
-        TriggerClientEvent('cd_doorlock:SetDoorState_name', -1, locked, Config.Stores[i]['Doors'].main, 'Jewellery Stores')
-        TriggerClientEvent('cd_doorlock:SetDoorState_name', -1, locked, Config.Stores[i]['Doors'].sec, 'Jewellery Stores')
+        TriggerClientEvent('cd_doorlock:SetDoorState_name', -1, locked, Config.Stores[i]['Doors'].main, 'Weedshoplery Stores')
+        TriggerClientEvent('cd_doorlock:SetDoorState_name', -1, locked, Config.Stores[i]['Doors'].sec, 'Weedshoplery Stores')
       end
     end
   end
@@ -194,7 +194,7 @@ QBCore.Functions.CreateCallback('qb-weedshop:server:GetCops', function(source, c
   cb(amount)
 end)
 
-QBCore.Functions.CreateCallback('qb-weedshop:server:GetJewelleryState', function(_, cb)
+QBCore.Functions.CreateCallback('qb-weedshop:server:GetWeedshopleryState', function(_, cb)
   local data = {Locations = Config.Vitrines, Hacks = Config.Stores}
 	cb(data)
 end)
