@@ -1,6 +1,6 @@
 Config = Config or {}
 
-Config.OneStore = true -- Set to true if using just the main Vangelico's Jewellers
+Config.OneStore = true -- Set to true if using just the main Vangelico's Weedshoplers
 Config.Cooldown = 1 * (60 * 2000) -- where x is minutes ie. x * (60 * 2000) \\ For door auto lock function
 Config.Timeout = 45 * (60 * 2000) -- where x is minutes ie. x * (60 * 2000) \\ For case smashing cooldown
 Config.AutoLock = true -- Set to false if you don't want the doors to auto lock/lock at all
@@ -34,7 +34,7 @@ if Config.DoorLock == 'ox' then -- Don't touch this
 end
 --[[
   Set to 'qb' for qb-doorlock  
-  // Create a file named `jewellery_stores` in qb-doorlock/config/ and copy the Door Config from the README into it.
+  // Create a file named `Weedshoplery_stores` in qb-doorlock/config/ and copy the Door Config from the README into it.
   Set to 'ox' for ox_doorlock 
   // Uncomment '@ox_lib/init.lua' from the fxmanifest.lua, create a file named `weed_shop_door` in ox_doorlock/config/ and copy the Door Config from the README into it.
 ]]--
@@ -192,225 +192,225 @@ Config.Vitrines = {
     coords = vector3(375.61, -826.79, 29.3),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab3_start`,
-    propEnd = `des_jewel_cab3_end`
+    propStart = `des_Weedshop_cab3_start`,
+    propEnd = `des_Weedshop_cab3_end`
   },
   [2] = {
     coords = vector3(380.15, -826.71, 29.3),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab4_start`,
-    propEnd = `des_jewel_cab4_end`
+    propStart = `des_Weedshop_cab4_start`,
+    propEnd = `des_Weedshop_cab4_end`
   },
   [3] = {
     coords = vector3(382.66, -816.57, 29.3),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab_start`,
-    propEnd = `des_jewel_cab_end`
+    propStart = `des_Weedshop_cab_start`,
+    propEnd = `des_Weedshop_cab_end`
   },
   [4] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab_start`,
-    propEnd = `des_jewel_cab_end`
+    propStart = `des_Weedshop_cab_start`,
+    propEnd = `des_Weedshop_cab_end`
   },
   [5] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab3_start`,
-    propEnd = `des_jewel_cab3_end`
+    propStart = `des_Weedshop_cab3_start`,
+    propEnd = `des_Weedshop_cab3_end`
   },
   [6] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab2_start`,
-    propEnd = `des_jewel_cab2_end`
+    propStart = `des_Weedshop_cab2_start`,
+    propEnd = `des_Weedshop_cab2_end`
   },
   [7] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab4_start`,
-    propEnd = `des_jewel_cab4_end`
+    propStart = `des_Weedshop_cab4_start`,
+    propEnd = `des_Weedshop_cab4_end`
   },
   [8] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab_start`,
-    propEnd = `des_jewel_cab_end`
+    propStart = `des_Weedshop_cab_start`,
+    propEnd = `des_Weedshop_cab_end`
   },
   [9] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab_start`,
-    propEnd = `des_jewel_cab_end`
+    propStart = `des_Weedshop_cab_start`,
+    propEnd = `des_Weedshop_cab_end`
   },
   [10] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab3_start`,
-    propEnd = `des_jewel_cab3_end`
+    propStart = `des_Weedshop_cab3_start`,
+    propEnd = `des_Weedshop_cab3_end`
   },
   [11] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab4_start`,
-    propEnd = `des_jewel_cab4_end`
+    propStart = `des_Weedshop_cab4_start`,
+    propEnd = `des_Weedshop_cab4_end`
   },
   [12] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab2_start`,
-    propEnd = `des_jewel_cab2_end`
+    propStart = `des_Weedshop_cab2_start`,
+    propEnd = `des_Weedshop_cab2_end`
   },
   [13] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab3_start`,
-    propEnd = `des_jewel_cab3_end`
+    propStart = `des_Weedshop_cab3_start`,
+    propEnd = `des_Weedshop_cab3_end`
   },
   [14] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab_start`,
-    propEnd = `des_jewel_cab_end`
+    propStart = `des_Weedshop_cab_start`,
+    propEnd = `des_Weedshop_cab_end`
   },
   [15] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab3_start`,
-    propEnd = `des_jewel_cab3_end`
+    propStart = `des_Weedshop_cab3_start`,
+    propEnd = `des_Weedshop_cab3_end`
   },
   [16] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab2_start`,
-    propEnd = `des_jewel_cab2_end`
+    propStart = `des_Weedshop_cab2_start`,
+    propEnd = `des_Weedshop_cab2_end`
   },
   [17] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab_start`,
-    propEnd = `des_jewel_cab_end`
+    propStart = `des_Weedshop_cab_start`,
+    propEnd = `des_Weedshop_cab_end`
   },
   [18] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab4_start`,
-    propEnd = `des_jewel_cab4_end`
+    propStart = `des_Weedshop_cab4_start`,
+    propEnd = `des_Weedshop_cab4_end`
   },
   [19] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab3_start`,
-    propEnd = `des_jewel_cab3_end`
+    propStart = `des_Weedshop_cab3_start`,
+    propEnd = `des_Weedshop_cab3_end`
   },
   [20] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab2_start`,
-    propEnd = `des_jewel_cab2_end`
+    propStart = `des_Weedshop_cab2_start`,
+    propEnd = `des_Weedshop_cab2_end`
   },
   [21] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab4_start`,
-    propEnd = `des_jewel_cab4_end`
+    propStart = `des_Weedshop_cab4_start`,
+    propEnd = `des_Weedshop_cab4_end`
   },
   [22] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab3_start`,
-    propEnd = `des_jewel_cab3_end`
+    propStart = `des_Weedshop_cab3_start`,
+    propEnd = `des_Weedshop_cab3_end`
   },
   [23] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab_start`,
-    propEnd = `des_jewel_cab_end`
+    propStart = `des_Weedshop_cab_start`,
+    propEnd = `des_Weedshop_cab_end`
   },
   [24] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab2_start`,
-    propEnd = `des_jewel_cab2_end`
+    propStart = `des_Weedshop_cab2_start`,
+    propEnd = `des_Weedshop_cab2_end`
   },
   [25] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab3_start`,
-    propEnd = `des_jewel_cab3_end`
+    propStart = `des_Weedshop_cab3_start`,
+    propEnd = `des_Weedshop_cab3_end`
   },
   [26] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab3_start`,
-    propEnd = `des_jewel_cab3_end`
+    propStart = `des_Weedshop_cab3_start`,
+    propEnd = `des_Weedshop_cab3_end`
   },
   [27] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab4_start`,
-    propEnd = `des_jewel_cab4_end`
+    propStart = `des_Weedshop_cab4_start`,
+    propEnd = `des_Weedshop_cab4_end`
   },
   [28] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab3_start`,
-    propEnd = `des_jewel_cab3_end`
+    propStart = `des_Weedshop_cab3_start`,
+    propEnd = `des_Weedshop_cab3_end`
   },
   [29] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab_start`,
-    propEnd = `des_jewel_cab_end`
+    propStart = `des_Weedshop_cab_start`,
+    propEnd = `des_Weedshop_cab_end`
   },
   [30] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab2_start`,
-    propEnd = `des_jewel_cab2_end`
+    propStart = `des_Weedshop_cab2_start`,
+    propEnd = `des_Weedshop_cab2_end`
   },
   [31] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab3_start`,
-    propEnd = `des_jewel_cab3_end`
+    propStart = `des_Weedshop_cab3_start`,
+    propEnd = `des_Weedshop_cab3_end`
   },
   [32] = {
     coords = vector3(0.0, -0, 0.0),
     isOpened = false,
     isBusy = false,
-    propStart = `des_jewel_cab3_start`,
-    propEnd = `des_jewel_cab3_end`
+    propStart = `des_Weedshop_cab3_start`,
+    propEnd = `des_Weedshop_cab3_end`
   }
 }
 
