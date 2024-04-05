@@ -1,4 +1,4 @@
-# qb-weedshop
+# qb-weedshop-hiest
 
 Weedshop Robbery for QBCore, Thermite, VarHack and auto-lock/unlock doors!
 
