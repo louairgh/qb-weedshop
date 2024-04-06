@@ -54,7 +54,43 @@ Head over to qb-smallresources/server/logs.lua and add this underneath your last
 
 Once you've added that go over to your logs server and create a channel, create a webhook and then place it inbetween the ''.
 If you do not know how to create a webhook follow this guide [Creating Webhooks](https://www.youtube.com/watch?v=fKksxz2Gdnc).
+## Setup dispatch
 
+Head over to ps-dispatch/client/alerts.lua and add this underneath your last line
+
+```lua
+local function WeedShopHeist()
+    local coords = GetEntityCoords(cache.ped)
+
+    local dispatchData = {
+        message = locale('weedshopheist'), -- Adjust the message as needed
+        codeName = 'weedshopheist', -- Adjust the code name
+        code = '10-90', -- Adjust the code as needed
+        icon = 'fas fa-cannabis', -- Change the icon as needed
+        priority = 2, -- Adjust the priority
+        coords = coords,
+        gender = GetPlayerGender(),
+        street = GetStreetAndZone(coords),
+        jobs = { 'leo' } -- Adjust the jobs that should receive the notification
+    }
+
+    TriggerServerEvent('ps-dispatch:server:notify', dispatchData)
+end
+exports('WeedShopHeist', WeedShopHeist)
+```
+and Head over to ps-dispatch/shared/config.lua and add this underneath your last line
+```lua
+ ['weedshopheist'] = {
+        radius = 0, 
+        sprite = 628, 
+        color = 5, 
+        scale = 1.5, 
+        length = 2, 
+        sound = 'robberysound', 
+        offset = false, 
+        flash = false 
+    },  
+```
 ## Important Config
 
 ### 1. Intial Setup
